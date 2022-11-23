@@ -27,4 +27,5 @@ model ServiceType{
   s_cond String?
   s_imgPath String?
   s_cat  String
+  s_price Float
 }

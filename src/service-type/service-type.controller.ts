@@ -43,8 +43,8 @@ export class ServiceTypeController {
     return this.servicetypeService.updateServiceType(body.t_id, body);
   }
 
-  // @Delete(':id')
-  // async deleteService(@Param('id') id: string) {
-  //   return this.servicetypeService.deleteServiceType(id);
-  // }
+  @Delete(':id')
+  async deleteServiceType(@Param('id') id: string) {
+    return this.servicetypeService.deleteServiceType(id);
+  }
 }

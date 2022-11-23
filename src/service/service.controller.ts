@@ -21,7 +21,7 @@ export class ServiceController {
    */
   @Post()
   async createService(@Body() body: ServiceDTO) {
-    return this.serviceService.create(body);
+    return this.serviceService.createService(body);
   }
   @Get()
   async getAllService() {
@@ -39,7 +39,7 @@ export class ServiceController {
    * @return
    */
   @Put()
-  async updateServiceType(@Body() body: ServiceDTO) {
+  async updateService(@Body() body: ServiceDTO) {
     return this.serviceService.updateService(body.s_id, body);
   }
 

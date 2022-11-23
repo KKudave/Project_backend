@@ -12,4 +12,5 @@ export interface ServiceTypeDTO {
   s_cond: string;
   s_imgPath: string;
   s_cat: string;
+  s_price: Float32Array;
 }

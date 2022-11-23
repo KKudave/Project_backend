@@ -11,7 +11,7 @@ import { Prisma } from '@prisma/client';
 export class ServiceService {
   constructor(private prisma: PrismaService) {}
 
-  async create(data: any) {
+  async createService(data: any) {
     const createService = await this.prisma.service.create({ data: data });
     return;
   }
